@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 
-# Use: python3.9 script.py 
 
 import os
 from Bio import SeqIO
@@ -13,7 +12,6 @@ import csv
 
 ################################################################################
 # Define input and output files:
-
 
 # Functional annotation files:
 signalpfile = "./signalp6/Zpa796/output.gff3"
@@ -54,15 +52,14 @@ dpi10_file= "/Users/dalsasso/Desktop/Posdoc/CAU/People/Leon_Hofmann/Zpa796/Expre
 network_info_file = "/Users/dalsasso/Desktop/Posdoc/CAU/network_analysis/Zpa796/tm-score_network/pairwise_TM0.5/Zpa796_tm-scores_network_MCODE_annotations.graphml_default_node.csv"
 
 
-
 # Fasta files:
 proteome_fastafile = "../data/References/proteomes/Zpa796_no_stop_codon.fa"
 secretome_fastafile = "../data/References/secretomes/Zpa796.secretome.fa"
 mature_secretome_fastafile="../data/References/secretomes/mature_secretomes/Zpa796.mature_secretome.fa"
 
+
 # Output table:
 out_anno = open("./Zpa796_annotation_12-08-24.tsv","w") 
-
 
 
 ################################################################################
