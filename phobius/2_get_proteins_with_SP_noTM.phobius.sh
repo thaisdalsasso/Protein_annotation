@@ -3,10 +3,9 @@
 #Iterate over each *.phobius.short.out file in the current directory
 for phobius_file in *.phobius.short.out; do
 
-    # Set the base name
     base_name=$(basename "$phobius_file" | cut -d. -f1)
 
-    #  Check conditions and extract IDs
+    #  Check conditions
     output_file="${base_name}.noTM.SP.phobius.ids"
     awk '!/^SEQENCE/ && $2 == 0 && $3 == "Y" {print $1}' "$phobius_file" > "$output_file"
 
