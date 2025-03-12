@@ -22,26 +22,18 @@ module load java/x64/17u3
 #########################
 # Run commands from here:
 
-
 # Version v5.54-87.0
 
-
-# Set the directory containing your protein files
 protein_dir="/home/dalsasso/data/References/proteomes/"
-
-# Set the output directory for Phobius results
 interpro_output_dir="/home/dalsasso/annotations/interpro/"
 
-# Iterate over protein files in the directory
+
 for protein_file in "$protein_dir"*no_stop_codon.fa; do
    
-    # Get the base name (before the first "_") of the file
     base_name=$(basename "$protein_file" | cut -d_ -f1)
 
-    # Run InterProScan
     interproscan -cpu 6 -appl SMART,SUPERFAMILY,CDD,TIGRFAM,Pfam,Coils,Gene3D \
          -i "$protein_file" -b "${interpro_output_dir}${base_name}.interpro" -f tsv
-    
 done
 
 
