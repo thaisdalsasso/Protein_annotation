@@ -23,19 +23,14 @@
 # Run commands from here:
 
 
-# Set the directory containing your protein files
 protein_dir="/home/dalsasso/data/References/secretomes/"
-
-# Set the output directory for Phobius results
 effectorp3_output_dir="/home/dalsasso/annotations/effectorp3/"
 
-# Iterate over protein files in the directory
+
 for protein_file in "$protein_dir"*secretome.fa; do
    
-    # Get the base name (before the first ".") of the file
     base_name=$(basename "$protein_file" | cut -d. -f1)
 
-    # Run EffectorP3
     python3 /home/dalsasso/softwares/EffectorP-3.0-main/EffectorP.py  -f -i "$protein_file" -o "${effectorp3_output_dir}${base_name}.secretome.effectorp3"
 
 done
