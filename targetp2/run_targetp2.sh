@@ -23,19 +23,14 @@
 # Run commands from here:
 
 
-# Set the directory containing your protein files
 protein_dir="/home/dalsasso/data/References/secretomes/"
-
-# Set the output directory for Phobius results
 targetp2_output_dir="/home/dalsasso/annotations/targetp2/"
 
-# Iterate over protein files in the directory
 for protein_file in "$protein_dir"*secretome.fa; do
    
     # Get the base name (before the first ".") of the file
     base_name=$(basename "$protein_file" | cut -d. -f1)
 
-    # Run Targetp2
     /home/dalsasso/softwares/targetp-2.0/bin/targetp -gff3 -format short -org non-pl -fasta "$protein_file" -prefix "${targetp_output_dir}${base_name}.secretome.targetp2"
 
 done
