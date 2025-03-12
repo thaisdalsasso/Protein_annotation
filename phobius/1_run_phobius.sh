@@ -22,19 +22,14 @@
 #########################
 # Run commands from here:
 
-# Set the directory containing your protein files
 protein_dir="/home/dalsasso/data/References/proteomes/"
-
-# Set the output directory for Phobius results
 phobius_output_dir="/home/dalsasso/annotations/phobius/"
 
-# Iterate over protein files in the directory
+
 for protein_file in "$protein_dir"*no_stop_codon.fa; do
    
-    # Get the base name (before the first "_") of the file
     base_name=$(basename "$protein_file" | cut -d_ -f1)
 
-    # Run Phobius
     perl /home/dalsasso/softwares/phobius/phobius.pl -short "$protein_file" > "${phobius_output_dir}${base_name}.phobius.short.out"
 
 done
