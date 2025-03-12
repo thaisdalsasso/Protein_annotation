@@ -1,1 +1,3 @@
-# protein_annotation
+# Protein annotation
+
+Scripts for protein functional annotation
