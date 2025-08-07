@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 
+# Code modified from Hugo Rody's
+
 import numpy as np
 from Bio import SeqIO
 
