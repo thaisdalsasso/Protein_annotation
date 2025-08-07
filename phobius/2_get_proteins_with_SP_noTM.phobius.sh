@@ -1,6 +1,5 @@
 #!/bin/bash
 
-#Iterate over each *.phobius.short.out file in the current directory
 for phobius_file in *.phobius.short.out; do
 
     base_name=$(basename "$phobius_file" | cut -d. -f1)

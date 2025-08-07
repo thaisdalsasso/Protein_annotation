@@ -1,9 +1,7 @@
 #!/bin/bash
 
-#Enter each subfolder in the current directory
 for subfolder in */; do
 
-    #Set the name of the directory as a base name
     base_name=$(basename "$subfolder")
 
     gff_file="${subfolder}output.gff3"

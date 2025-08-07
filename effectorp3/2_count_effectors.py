@@ -34,6 +34,6 @@ def save_effectors_count(table_file):
         output.write(f"Number of apoplastic/cytoplasmic effectors:\t{apoplastic_cytoplasmic_effectors_count}\n")
         output.write(f"Number of cytoplasmic/apoplastic effectors:\t{cytoplasmic_apoplastic_effectors_count}\n")
 
-table_file = 'Zt469.secretome.effectorp3'
+table_file = 'Zpa796.secretome.effectorp3'
 save_effectors_count(table_file)
 
