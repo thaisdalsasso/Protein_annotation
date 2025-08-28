@@ -1,3 +1,3 @@
 # Protein annotation
 
-Scripts for protein annotation tools
+A collection of scripts for protein annotation across multiple tools.
