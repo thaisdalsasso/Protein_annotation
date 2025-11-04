@@ -10,7 +10,7 @@ def save_effectors_count(table_file):
     cytoplasmic_apoplastic_effectors_count = 0
 
     with open(table_file, 'r') as f:
-        next(f)  # Skip the header line
+        next(f)  
         for line in f:
             fields = line.strip().split('\t')
             prediction = fields[-1]
