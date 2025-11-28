@@ -1,8 +1,8 @@
 #!/bin/bash
 
 
-protein_dir="/home/dalsasso/data/References/secretomes/"
-targetp2_output_dir="/home/dalsasso/annotations/targetp2/"
+protein_dir="/data/References/secretomes/"
+targetp2_output_dir="/annotations/targetp2/"
 
 for protein_file in "$protein_dir"*secretome.fa; do
    

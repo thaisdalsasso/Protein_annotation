@@ -1,7 +1,7 @@
 #!/bin/bash
 
-protein_dir="/home/dalsasso/data/References/proteomes/"
-phobius_output_dir="/home/dalsasso/annotations/phobius/"
+protein_dir="/data/References/proteomes/"
+phobius_output_dir="/annotations/phobius/"
 
 
 for protein_file in "$protein_dir"*no_stop_codon.fa; do

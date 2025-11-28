@@ -1,7 +1,7 @@
 #!/bin/bash
 
-proteome_dir="/Users/dalsasso/Desktop/Posdoc/CAU/data/References/proteomes"
-proteases_dir="/Users/dalsasso/Desktop/Posdoc/CAU/data/databases/proteases_db"
+proteome_dir="/CAU/data/References/proteomes"
+proteases_dir="/CAU/data/databases/proteases_db"
 
 for i in $proteome_dir/*_no_stop_codon.fa
 do

@@ -1,8 +1,8 @@
 #!/bin/bash
 
 
-proteome_dir="/Users/dalsasso/Desktop/Posdoc/CAU/data/References/proteomes"
-lipases_dir="/Users/dalsasso/Desktop/Posdoc/CAU/data/databases/lipases_db"
+proteome_dir="/CAU/data/References/proteomes"
+lipases_dir="/CAU/data/databases/lipases_db"
 
 
 for i in $proteome_dir/*_no_stop_codon.fa

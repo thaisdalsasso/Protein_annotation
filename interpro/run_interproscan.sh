@@ -2,8 +2,8 @@
 
 # v5.54-87.0
 
-protein_dir="/home/dalsasso/data/References/proteomes/"
-interpro_output_dir="/home/dalsasso/annotations/interpro/"
+protein_dir="/data/References/proteomes/"
+interpro_output_dir="/annotations/interpro/"
 
 
 for protein_file in "$protein_dir"*no_stop_codon.fa; do
