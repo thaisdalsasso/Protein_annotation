@@ -1,7 +1,7 @@
 #!/bin/bash
 
-protein_dir="/Users/dalsasso/Desktop/Posdoc/CAU/data/References/secretomes/"
-deeploc2_output_dir="/Users/dalsasso/Desktop/Posdoc/CAU/annotations/deeploc2"
+protein_dir="/CAU/data/References/secretomes/"
+deeploc2_output_dir="/CAU/annotations/deeploc2"
 
 for protein_file in "$protein_dir"*secretome.fa; do
    

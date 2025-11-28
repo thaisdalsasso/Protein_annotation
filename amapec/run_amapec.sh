@@ -17,7 +17,7 @@ module load R/4.3.1 gcc/12.3.0
 conda activate amapec_env
 
 
-/gxfs_home/cau/sunbo511/amapec/amapec -i "/gxfs_work/cau/sunbo511/alphafold/Zpa796_AF2bestmodels/" -o "./" -d -t 20
+/amapec/amapec -i "/alphafold/Zpa796_AF2bestmodels/" -o "./" -d -t 20
 
 
 conda deactivate

@@ -34,7 +34,7 @@ def save_effectors_count(table_file):
         output.write(f"Number of apoplastic/cytoplasmic effectors: {apoplastic_cytoplasmic_effectors_count}\n")
         output.write(f"Number of cytoplasmic/apoplastic effectors: {cytoplasmic_apoplastic_effectors_count}\n")
 
-directory = '/home/dalsasso/annotations/effectorp3'
+directory = '/annotations/effectorp3'
 for filename in os.listdir(directory):
     if filename.endswith("secretome.effectorp3"):
         file_path = os.path.join(directory, filename)
