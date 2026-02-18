@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# v5.54-87.0
+# InterProScan v5.54-87.0
 
 protein_dir="/data/References/proteomes/"
 interpro_output_dir="/annotations/interpro/"
