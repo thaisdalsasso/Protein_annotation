@@ -7,6 +7,5 @@ for tmhmm_file in *.tmhmm.out; do
     output_file="${base_name}.noTM.tmhmm.ids"
     awk '/Number of predicted TMHs:  0/ {print $2}' "$tmhmm_file" > "$output_file"
 
-    echo "Gene names with no transmembrane domains in $base_name have been saved to $output_file"
 done
 
